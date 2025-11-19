@@ -38,6 +38,11 @@ UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 UnicodeFun = "1cfade01-22cf-5700-b092-accc4b62d6e1"
 Unzip = "41fe7b60-77ed-43a1-b4f0-825fd5a5650d"
 
+[sources]
+PlotThemes = {path = "../PlotThemes"}
+RecipesBase = {path = "../RecipesBase"}
+RecipesPipeline = {path = "../RecipesPipeline"}
+
 [weakdeps]
 FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
 GR = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
