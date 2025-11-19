@@ -48,6 +48,7 @@ add_aliases(
     :foreground_color_legend,
 )
 add_aliases(:legend_font_pointsize, :legendfontsize)
+add_aliases(:legend_marker_size, :legendmarkersize)
 add_aliases(
     :legend_title,
     :key_title,

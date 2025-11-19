@@ -6,6 +6,7 @@
     font::Font = font(8)
     title_font::Font = font(11)
     column = 1
+    marker_size = 1.0
 end :match = (
     :legend_font_family,
     :legend_font_color,

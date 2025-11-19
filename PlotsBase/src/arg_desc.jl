@@ -110,6 +110,7 @@ const _arg_desc = KW(
         Choose from (`:none`, `:best`, `:inline`, `:inside`, `:legend`) or any valid combination of `:(outer ?)(top/bottom ?)(right/left ?)`, i.e.: `:top`, `:topright`, `:outerleft`, `:outerbottomright` ... (note: only some may be supported in each backend).""",
     ),
     :legend_column => (Integer, "Number of columns in the legend. `-1` stands for maximum number of columns (horizontal legend)."),
+    :legend_marker_size => (Real, "Size of markers in the legend relative to their actual size. Default is 1.0 (automatic scaling)."),    
     :legend_title_font => (Font, "Font of the legend title."),
     :legend_font_family => (Union{AStr, Symbol}, "Font family of legend entries."),
     :legend_font_pointsize => (Integer, "Font pointsize of legend entries."),

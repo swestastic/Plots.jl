@@ -1281,6 +1281,7 @@ function gr_add_legend(sp, leg, viewport_area)
                 msh = gr_get_markershape.(msh)
                 msw = max(first(series[:markerstrokewidth]), 0)
                 mfac = 0.8 * lfps / (msz + 0.5 * msw + 1.0e-20)
+                legend_marker_scale = sp[:legend_marker_size]
                 gr_draw_marker(
                     series,
                     xpos - 2leg.base_factor,
@@ -1288,8 +1289,8 @@ function gr_add_legend(sp, leg, viewport_area)
                     nothing,
                     clims,
                     1,
-                    min(max_markersize, mfac * msz),
-                    min(max_markersize, mfac * msw),
+                    min(max_markersize, legend_marker_scale * mfac * msz),
+                    min(max_markersize, legend_marker_scale * mfac * msw),
                     _cycle(msh, 1),
                 )
             end
